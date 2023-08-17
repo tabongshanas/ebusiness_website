@@ -19,6 +19,7 @@ p {
     position: fixed;
     width: 100%;
     display: flex;
+    order: 100;
     flex-direction: row;
 }
 .landing-page-header {
@@ -79,6 +80,11 @@ p {
     .main-nav-icon {
         display: inline-block;
         margin-left: 250px;
+    }
+}
+@media (max-width: 658px) {
+    .scrol-icon {
+        display: none;
     }
 }
 
@@ -383,6 +389,7 @@ p {
     text-align: center;
     margin-top: 15px;
     text-transform: capitalize;
+    padding-bottom: 20px;
 }
 .special-team-text-header h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -563,13 +570,155 @@ p {
 
 
 .pricing-table-container {
-    border: 1px solid red;
+    margin-top: 150px;
+    min-width: 303px;
 }
 .main-pricing-table-container {
-    border: 1px solid green;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 .pricing-table-basic {
-    border: 1px solid fuchsia;
+    border: 1px solid #444;
+    width: 400px;
+    padding-bottom: 20px;
+}
+.pricing-table-basic-header {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.pricing-table-basic-header p {
+    margin-top: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.pricing-table-basic-content {
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #444;
+}
+.pricing-table-basic-content span {
+    color: #444;
+}
+.pricing-table-basic-content-end {
+    border: 1px solid #444;
+    margin-top: 5px;
+}
+.thumbs-up-icon.del {
+    color: #444;
+}
+.pricing-table-basic .primary-btn {
+    width: 104px;
+    margin-top: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.pricing-table-basic .primary-btn:hover {
+    cursor: pointer;
+    background-color: #444;
+}
+.pricing-table-basic .primary-btn.ed {
+    background-color: #3ec1d5;
+}
+.pricing-table-basic .primary-btn.ed:hover {
+    background-color: rgb(187, 185, 185);
+}
+.pricing-table-basic-header.ed {
+    padding: 20px;
+    background-color: #f8f6f6;
+}
+.thumbs-up-icon.del.ed {
+    color: #3ec1d5;
+}
+.pricing-table-basic.ed {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (max-width: 642px) {
+    .pricing-table-basic-header {
+        font-size: 12px;
+    }
+    .pricing-table-basic-header p {
+        font-size: 12px;
+    }
+    .pricing-table-basic .primary-btn {
+        font-size: 10px;
+        width: 65px;
+    }
+}
+@media (max-width: 503px) {
+    .main-pricing-table-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pricing-table-basic {
+        margin: 20px 0px;
+    }
+}
+
+
+
+.cross-through-image-container {
+    margin-top: 200px;
+    background-image: url('/images/fff.jpg');
+    background-attachment: fixed;
+}
+.cross-through-image-layer {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+.main-cross-through-image {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.main-cross-through-image h1 {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-cross-through-image p {
+    text-transform: capitalize;
+    color: #f7f5f5;
+    font-size: 20px;
+} 
+.main-cross-through-image em {
+    color: #f8f6f6;
+    margin-top: 20px;
+    text-align: center;
+}
+.main-cross-through-image imp {
+    color: #3ec1d5;
+    font-size: 18px;
+}
+.scrol-icon2 {
+    margin-top: 30px;
+}
+.main-scrol-icon2 {
+    color: #3ec1d5;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.main-scrol-icon2.ed {
+    color: #f8f6f6;
+}
+.main-cross-through-image span {
+    color: #3ec1d5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
