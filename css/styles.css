@@ -764,6 +764,8 @@ dl {
 }
 .main-news-image.ed {
     width: 400px;
+    height: 300px;
+    border: 1px solid #222;
 }
 .news-date {
     color: #333;
